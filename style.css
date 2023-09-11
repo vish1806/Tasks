@@ -1,0 +1,8 @@
+ol
+{
+    list-style-type: disc;
+}
+.nested
+{
+    list-style-type: circle;
+}
