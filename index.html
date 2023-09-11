@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .flexbox {
+            background-color: white;
+            display: flex;
+            flex-direction: row; /* To align the heading and body to the top */
+            width: 700px; /* Set the width to 700px */
+            height: 475px; /* Set the height to 475px (400px + 75px gap) */
+            border: 2px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .content {
+            padding: 20px;
+            text-align: left; /* Left-align the text content */
+            margin-left: 30px; /* Add margin to the left to make space for the button */
+            margin-right: 30px; /* Add margin to the right to make space for the button */
+        }
+        
+        .sidenav {
+            width: 60px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align buttons to the left */
+            margin-left: -10px; /* Add a negative margin to shift buttons to the left */
+            margin-top: 75px; /* Add 75px top margin for the color buttons */
+        }
+        
+        .sidenav-button {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            transition: width 0.3s;
+        }
+        
+        .sidenav-button:hover {
+            width: 150px; /* Expand the button on hover */
+        }
+        
+        .color-button {
+            width: 30px;
+            height: 30px;
+            margin: 0; /* Set margin to 0px for the color buttons */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; /* Add transform transition */
+        }
+        
+        .color-button:hover {
+            background-color: #ddd;
+            transform: scale(1.5); /* Increase size by 50% on hover */
+        }
+        
+        .green-button {
+            background-color: green;
+            width: 30px;
+            height: 30px;
+            margin: 0 0 15px 0; /* Set margin to create a 15px gap from the green button at the bottom */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; /* Add transform transition */
+        }
+        
+        .green-button:hover {
+            background-color: #009900;
+            transform: scale(1.5); /* Increase size by 50% on hover */
+        }
+        
+        .blue-button {
+            background-color: blue;
+            width: 30px;
+            height: 30px;
+            margin: 0 0 10px 0; /* Reduce the gap to 10px from the red button at the bottom */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; /* Add transform transition */
+        }
+        
+        .blue-button:hover {
+            background-color: #0000ff;
+            transform: scale(1.5); /* Increase size by 50% on hover */
+        }
+
+        .red-button {
+            background-color: red;
+            width: 30px;
+            height: 30px;
+            margin: 0 0 10px 0; /* Reduce the gap to 10px from the black button at the bottom */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; /* Add transform transition */
+        }
+        
+        .red-button:hover {
+            background-color: #ff0000;
+            transform: scale(1.5); /* Increase size by 50% on hover */
+        }
+
+        .black-button {
+            background-color: black;
+            width: 30px;
+            height: 30px;
+            margin: 0; /* Set margin to 0px for the black button */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; /* Add transform transition */
+        }
+        
+        .black-button:hover {
+            background-color: #000;
+            transform: scale(1.5); /* Increase size by 50% on hover */
+        }
+
+        /* Adjust text styles for single-line display */
+        h1, p {
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflowing text */
+            text-overflow: ellipsis; /* Display ellipsis (...) for overflowing text */
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="sidenav">
+            <div class="green-button"></div>
+            <div class="blue-button"></div>
+            <div class="red-button"></div>
+            <div class="black-button"></div>
+        </div>
+        <div class="content">
+            <h1>Hoverable Sidenav Buttons</h1>
+            <p>Hover over the buttons in the left side navigation to open them</p>
+        </div>
+    </div>
+</body>
+</html>
