@@ -1,0 +1,48 @@
+body
+{
+    margin: 150px;
+}
+table,tr,td
+{
+    border-collapse: collapse;
+    padding: 3px;
+}
+.lang
+{
+    width: 100px;
+}
+.name
+{
+    padding-right: 40px;
+}
+.inputwithoutradio
+{
+    width: 300px;
+}
+.radio
+{
+    display: inline-block;
+}
+.declare
+{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+button
+{
+    margin-left: 210px;
+}
+.hereby
+{
+    margin-left: 1px;
+}
+.login
+{
+    margin-right: 1px;
+}
+h1
+{
+    color: blue;
+    margin-left: 100px;
+}
