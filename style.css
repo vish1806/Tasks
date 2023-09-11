@@ -1,0 +1,9 @@
+table
+{
+    border-collapse: collapse;
+    border-style:inherit;
+    background-color: rgba(95, 193, 206, 0.742);
+    border-color: white;
+    row-gap: 10px;
+    width: 90%;
+}
