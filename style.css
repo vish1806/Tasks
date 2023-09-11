@@ -1,0 +1,15 @@
+table
+{
+    background-color: rgba(95, 193, 206, 0.742);
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 100%;
+}
+td
+{
+    border-radius: 20px;
+}
+th
+{
+    border-radius: 20px;
+}
